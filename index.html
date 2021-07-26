@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<style>
+    td {
+        font-size: 36px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        height: 100px;
+        width: 100px;
+        border: solid 1px black;
+    }
+</style>
+
+<body class="container">
+
+    <div class="jumbotron p-5 text-center bg-light">
+        <h1 class="mb-3">Tic-Tac-Toe</h1>
+        <h4 class="mb-3">Enjoy The Game</h4>
+    </div>
+    <br>
+    <div class="alert alert-primary text-center" style="vertical-align:middle;">
+        <h3>
+            <label id="current-turn"></label>
+        </h3>
+        
+    </div>
+    <div class="card text-center">
+        <div class="card-body">
+            <h2>Game Board</h2>
+            Click on a square, when it is your turn.
+            <table id="game-table" style="margin-left: auto; margin-right: auto; background-color: lightblue;">
+                <tr id="r0">
+                    <td id="r0c0"></td>
+                    <td id="r0c1"></td>
+                    <td id="r0c2"></td>
+                </tr>
+                <tr id="r1">
+                    <td id="r1c0"></td>
+                    <td id="r1c1"></td>
+                    <td id="r1c2"></td>
+                </tr>
+                <tr id="r2">
+                    <td id="r2c0"></td>
+                    <td id="r2c1"></td>
+                    <td id="r2c2"></td>
+                </tr>
+            </table>
+            <br>
+
+            <div>
+                <button id="reset">Reset Game Board</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="tictactoe.js"></script>
+</body>
+
+</html>
